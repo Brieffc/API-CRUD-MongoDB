@@ -23,7 +23,7 @@ mongoose
     `mongodb+srv://${DB_USER}:${DB_PASSWORD}@apicluster.m7i64zp.mongodb.net/meuBanco?retryWrites=true&w=majority`
   )
   .then(() => {
-    console.log("Conectou ao banco!");
     app.listen(3000);
+    console.log("Conectou ao banco!");
   })
   .catch((err) => console.log(err));
